@@ -222,3 +222,16 @@ window.onload = function() {
     getLocalIP();
     getLocationInfo();
 };
+document.addEventListener("DOMContentLoaded", function() {
+            // Mendapatkan data kota dan provinsi dari IP
+            fetch('http://ip-api.com/json/')
+            .then(response => response.json())
+            .then(data => {
+                var cityElement = document.getElementById("city");
+                cityElement.innerHTML = "City: " + data.city;
+
+                var stateElement = document.getElementById("state");
+                stateElement.innerHTML = "State: " + data.regionName;
+            })
+            .catch(error => console.error('Error:', error));
+        });
