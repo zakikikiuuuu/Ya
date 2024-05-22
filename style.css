@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+    animation: colorChange 3s infinite;
+    text-align: center;
+}
+
+@keyframes colorChange {
+    0% { color: #333; }
+    50% { color: #007BFF; }
+    100% { color: #333; }
+}
+
+.info-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.info-container p {
+    background: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    color: #555;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    color: #555;
+}
+
+
+@keyframes rgbCycle {
+    0% { color: red; }
+    23% { color: green; }
+    42% { color: purple; }
+    66% { color: blue; }
+    100% { color: red; }
+}
+
+#animated-text {
+    display: inline-block;
+}
+
+#animated-text span {
+    display: inline-block;
+    animation: rgbCycle 1.5s infinite;
+}
+
+/* Setiap span memiliki animasi yang dimulai dengan jeda 0.1s */
+#animated-text span:nth-child(1) { animation-delay: 0s; }
+#animated-text span:nth-child(2) { animation-delay: 0.1s; }
+#animated-text span:nth-child(3) { animation-delay: 0.2s; }
+#animated-text span:nth-child(4) { animation-delay: 0.3s; }
+#animated-text span:nth-child(5) { animation-delay: 0.4s; }
+#animated-text span:nth-child(6) { animation-delay: 0.5s; }
+#animated-text span:nth-child(7) { animation-delay: 0.6s; }
+#animated-text span:nth-child(8) { animation-delay: 0.7s; }
+#animated-text span:nth-child(9) { animation-delay: 0.8s; }
+#animated-text span:nth-child(10) { animation-delay: 0.9s; }
+#animated-text span:nth-child(11) { animation-delay: 1s; }
+#animated-text span:nth-child(12) { animation-delay: 1.1s; }
+#animated-text span:nth-child(13) { animation-delay: 1.2s; }
+#animated-text span:nth-child(14) { animation-delay: 1.3s; }
+#animated-text span:nth-child(15) { animation-delay: 1.4s; }
+#animated-text span:nth-child(16) { animation-delay: 1.5s; }
+#animated-text span:nth-child(17) { animation-delay: 1.6s; }
+#animated-text span:nth-child(18) { animation-delay: 1.7s; }
+#animated-text span:nth-child(19) { animation-delay: 1.8s; }
